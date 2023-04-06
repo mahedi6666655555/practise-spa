@@ -10,6 +10,8 @@ import {
 import Home from './components/pages/Home';
 import About from './components/nav/About';
 import Contact from './components/nav/Contact';
+// this is for err page
+import Errp from './components/nav/err/Errp';
 
 
 let router = createBrowserRouter([
@@ -17,10 +19,12 @@ let router = createBrowserRouter([
   {
     path: "/",
     element: <Home></Home>,
+    errorElement: <Errp />,
     children: [
       {
         path: "About",
-        element: <About></About>
+        element: <About></About>,
+
 
 
       },
@@ -44,7 +48,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
 
 
-<RouterProvider router={router}  ></RouterProvider>
+    <RouterProvider router={router}  ></RouterProvider>
 
   </React.StrictMode>,
 )

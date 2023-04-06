@@ -1,9 +1,15 @@
 import React from 'react';
 
+
 const About = () => {
     return (
         <div>
-            i am about
+
+            <div>
+                <div>
+mahedi
+                </div>
+            </div>
         </div>
     );
 };
